@@ -1,0 +1,39 @@
+[package]
+name = "voidsnap"
+version = "0.1.0"
+edition = "2021"
+authors = ["Swastik Patel"]
+license = "MIT"
+description = "A blazing-fast, minimalist screenshot utility for Wayland compositors"
+
+[dependencies]
+# Wayland core
+wayland-client = "0.31"
+wayland-protocols = { version = "0.32", features = [
+    "client",
+    "staging",
+    "unstable",
+] }
+wayland-protocols-wlr = { version = "0.3", features = ["client"] }
+smithay-client-toolkit = "0.20"
+
+# Clipboard (pure Rust, data-control protocol)
+wl-clipboard-rs = "0.9"
+
+# Image encoding
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+# Configuration
+serde = { version = "1", features = ["derive"] }
+toml = "1"
+directories = "6"
+
+# Timestamps
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+
+# Shared memory / mmap
+nix = { version = "0.31", features = ["mman", "fs"] }
+memmap2 = "0.9"
+
+# Error handling
+anyhow = "1"

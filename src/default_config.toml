@@ -1,0 +1,52 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║                    VoidSnap Configuration                    ║
+# ╚══════════════════════════════════════════════════════════════╝
+#
+# This file is auto-generated on first run.
+# Location: ~/.config/voidsnap/config.toml
+#
+# Edit any value below and restart VoidSnap to apply changes.
+
+# ── Save Settings ──────────────────────────────────────────────
+#
+# The directory where screenshots are saved.
+# Supports ~ for home directory expansion.
+# The folder will be created automatically if it doesn't exist.
+save_directory = "~/Pictures/Screenshots/"
+
+# ── Clipboard ──────────────────────────────────────────────────
+#
+# When true, the captured image is also injected into the
+# Wayland clipboard (image/png MIME type) after saving to disk.
+copy_to_clipboard = true
+
+# ── Selection Appearance ───────────────────────────────────────
+#
+# The border color of the selection rectangle, as a CSS hex string.
+# Examples: "#00FFFF" (cyan), "#38BDF8" (blue), "#F472B6" (pink)
+selection_border_color = "#00FFFF"
+
+# Border thickness in pixels (scaled on HiDPI).
+selection_border_width = 3
+
+# ── Overlay Appearance ─────────────────────────────────────────
+#
+# The tint color applied to the dimmed overlay region.
+# The Cosmic Dawn default is a deep purple-black void.
+overlay_color = "#0D0B14"
+
+# Opacity of the dimmed overlay (0.0 = fully transparent, 1.0 = opaque).
+overlay_opacity = 0.70
+
+# Opacity of the idle overlay (before a selection is started).
+overlay_idle_opacity = 0.40
+
+# ── Behaviour ──────────────────────────────────────────────────
+#
+# When true, VoidSnap captures a full-screen freeze-frame before
+# showing the overlay. The user selects from a static image, so
+# animations and cursor movement don't affect the final capture.
+freeze_frame = true
+
+# Show a live WxH dimension label beside the selection rectangle.
+show_dimensions = true
