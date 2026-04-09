@@ -1,6 +1,6 @@
 <div align="center">
 
-# VOIDSNAP
+# VOIDSNAP (Still 🛠️)
 
 **A zero-dependency, pure-Rust screenshot utility for the Wayland ecosystem.**
 
